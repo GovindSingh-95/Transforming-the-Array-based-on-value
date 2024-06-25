@@ -15,7 +15,7 @@
   <br>Here,we are trying to find the largest element from the Array and assign it Lowest element of the Integer,so that we other elements can also be given chance to be changed.<br>
   <br>But,if all the elements are given same value of Integer.MIN_VALUE, then how to differentiate between them.<br>
   <br>So,for differntiation we can add the value of round,while assigning the value of Integer.MIN_VALUE to the largest element<br>
-  <br>Basically, take for loop int i from 0 to n-1,and compare it with max, and if(arr[i]>=max) give idx=i.After this pass is over.Do arr[idx]=Integer.MIN_VALUE+round.<br>
+  <br>Basically, take for loop int i from 0 to n-1,and compare it with max, and if(arr[i]>=max) give idx=i and update max,max=arr[i].After this pass is over.Do arr[idx]=Integer.MIN_VALUE+round.<br>
   <br>Now outside of outer loop, make another for loop from 0 to n-1.<br>
   <br>As,value stored in each element is different,such that largest element got smallest value and smallest got largest value.<br>
   <br>Now,to assign the desired index value to the desired place.Subtract Integer.MIN_VALUE from each element.But as stated earlier,It will result lagrgest value of Array to get 0,while smallest get n-1.<br>
